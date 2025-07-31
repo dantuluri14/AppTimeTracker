@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/image_view_app_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="App Icon" />
+
+    <TextView
+        android:id="@+id/text_view_usage_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Usage Time"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_view_app_icon"
+        android:layout_toStartOf="@id/text_view_usage_time"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:text="App Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
